@@ -1,0 +1,18 @@
+<h1>Delete User</h1>
+
+<div>
+    <strong>ID:</strong> {{user._id}}
+</div>
+<div>
+    <strong>Name:</strong> {{user.name}}
+</div>
+<div>
+    <strong>Email:</strong> {{user.email}}
+</div>
+<div>
+    <strong>Phone:</strong> {{user.phone}}
+</div>
+<form action="/users/{{user._id}}?_method=DELETE" method="POST">
+    <button type="submit">Delete</button>
+    <a href="/">Cancel</a>
+</form>
